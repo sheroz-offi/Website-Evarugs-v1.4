@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/fsv/favicon.ico" />
+    <link rel="stylesheet" href="css/stayle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>EVARUGS</title>
+  </head>
+  <body>
+    <div class="container contbg">
+      <header class="header">
+        <div class="header-left">
+          <div class="content-number">
+            <img class="img-number" src="img/tel-icon.svg" alt="" />
+            <a class="text-a-white vel" href="tel:+375292922929"
+              >+375 29 292-29-29 (VEL)</a
+            >
+            <a class="text-a-white mtc" href="tel:+375333333333"
+              >+375 33 333-33-33 (МТС)</a
+            >
+          </div>
+        </div>
+        <div class="header-center">
+          <img src="img/location-icon.svg" alt="" />
+          <a
+            class="text-a-white loc"
+            href="https://www.google.com/maps/d/viewer?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ll=41.51313019191121%2C64.58526249999998&z=6"
+            >ваш город: <span id="userCity1" class="your-loc"></span
+          ></a>
+        </div>
+        <div class="header-right">
+          <img src="img/logo-insta-white.svg" alt="" />
+          <a class="text-a-white insta" href="https://www.instagram.com/"
+            >посетите нашу
+            <p class="text-a-white">страницу</p>
+          </a>
+        </div>
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-container">
+              <span class="close"
+                ><img src="img/free-icon-close-cross-64498.png" alt=""
+              /></span>
+              <h1 class="text-h1">Форма заявки</h1>
+              <div class="modal-content-inputs">
+                <input
+                  class="input"
+                  name="text"
+                  placeholder="Ваше имя"
+                  type="text"
+                />
+                <input
+                  class="input"
+                  name="text"
+                  placeholder="Ваше email"
+                  type="text"
+                />
+              </div>
+              <textarea
+                maxlength="200"
+                class="modal-textarea"
+                name="text"
+                id="modal-textarea"
+                cols="30"
+                rows="10"
+                placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+              ></textarea>
+              <button onclick="closeModal()" class="modal-btn btn-pinkblue">
+                отправить
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <div class="main-header">
+        <div class="main-logo">
+          <a
+            href="https://www.figma.com/file/7U4IltFioiIgcHA2BWsuIu/EVARUGS-%2B?node-id=588%3A4&mode=dev"
+            class="img-a"
+          >
+            <img
+              class="main-img-logo"
+              src="img/logo-header-evarugs.svg"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.figma.com/file/7U4IltFioiIgcHA2BWsuIu/EVARUGS-%2B?node-id=588%3A4&mode=dev"
+            class="text-a-black"
+            >evarugs</a
+          >
+        </div>
+        <div class="main-item-a">
+          <a href="#" class="text-a-gray reviews">отзывы</a>
+          <a href="#" class="text-a-gray whatIsThis">что это?</a>
+          <a href="#" class="text-a-gray contacts">контакты</a>
+        </div>
+      </div>
+      <main class="main">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          class="main-left"
+        >
+          <div class="main-text-h1 h1">
+            Инновационные коврики для автомобиля
+          </div>
+          <div class="main-text-p text-p-black">в вашем городе</div>
+          <button onclick="openModal()" class="main-btn btn-pinkblue">
+            ЗАКАЗАТЬ
+          </button>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          class="main-right"
+        >
+          <img class="main-photo absolute" src="img/main-photo--1.svg" alt="" />
+          <img class="main-photo relative" src="img/main-photo.svg" alt="" />
+        </div>
+      </main>
+      <div class="main-card-content">
+        <div data-aos="zoom-out-down" class="main-card-text">
+          Что такое <span class="text-span-col"> eva </span> коврики?
+        </div>
+        <div class="main-cards">
+          <img class="absolute" src="img/для фона.svg" alt="bg-photo" />
+          <div data-aos="fade-up" data-aos-duration="3000" class="main-card">
+            <img class="card-img" src="img/card-img (3).png" alt="" />
+            <div class="card-texts">
+              <div class="card-text-h1 h1">материал</div>
+              <div class="card-text-p card-p-gray">
+                Коврики EVA всесезонные и отличаются уникальной поверхностью
+                материала с ячейками ромбовидной формы. Из-за чего вода не
+                проливается при изъятии ковра и не плещется при езде. Коврики
+                воду не пропускают.
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            class="main-card"
+          >
+            <img class="card-img" src="img/card-img (2).png" alt="" />
+            <div class="card-texts">
+              <div class="card-text-h1 h1">отличия</div>
+              <div class="card-text-p card-p-gray">
+                Резиновые коврики загибаются и лезут на педали. EVA коврики
+                такого не допустят! Специальные липучки держат его в одном
+                положении. При желании, для водителя устанавливается подпятник
+                из рельефного алюминия.
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="3000" class="main-card">
+            <img class="card-img" src="img/card-img (1).png" alt="" />
+            <div class="card-texts">
+              <div class="card-text-h1 h1">расцветка</div>
+              <div class="card-text-p card-p-gray">
+                Автомобильные коврики EVA можно заказать и в индивидуальных
+                размерах и в разных цветах, которые комбинируется на выбор
+                покупателя с такими же цветами окантовочной полипропиленовой
+                ременной ленты.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container conbg">
+      <div class="main-comments">
+        <div
+          data-aos="fade-down-right"
+          class="main-comment com1"
+          style="opacity: 0.5"
+        >
+          <img class="comment-img" src="img/comment-img-bg (1).png" alt="" />
+          <div class="main-text-comment text-p-black">
+            Покупала у ребят коврики для Хундай солярис в <br />
+            подарок молодому человеку. Все очень <br />
+            понравилось. Буду советовать только вас.
+          </div>
+          <hr class="main-comment-hr" />
+          <div class="main-text-name-comment text-a-gray">Вера К.</div>
+        </div>
+        <div
+          data-aos="fade-down-right"
+          class="main-comment com2"
+          style="opacity: 1"
+        >
+          <img class="comment-img" src="img/comment-img-bg (3).png" alt="" />
+          <div class="main-text-comment text-p-black">
+            Покупала у ребят коврики для Хундай солярис в <br />
+            подарок молодому человеку. Все очень <br />
+            понравилось. Буду советовать только вас.
+          </div>
+          <hr class="main-comment-hr" />
+          <div class="main-text-name-comment text-a-gray">Вера К.</div>
+        </div>
+        <div
+          data-aos="fade-down-right"
+          class="main-comment com3"
+          style="opacity: 0.5"
+        >
+          <img class="comment-img" src="img/comment-img-bg (2).png" alt="" />
+          <div class="main-text-comment text-p-black">
+            Покупала у ребят коврики для Хундай солярис в <br />
+            подарок молодому человеку. Все очень <br />
+            понравилось. Буду советовать только вас.
+          </div>
+          <hr class="main-comment-hr" />
+          <div class="main-text-name-comment text-a-gray">Вера К.</div>
+        </div>
+      </div>
+    </div>
+    <footer class="container foot">
+      <div id="row" class="row">
+        <img class="left-6sh img-foot" src="img/left-6sh.svg" alt="" />
+        <div class="col-md c1">
+          <h3 class="footer-text h3">Мы в социальных сетях</h3>
+          <a href="https://www.instagram.com/">
+            <img src="img/logo-insta-color.png" alt="logo-instagram" />
+          </a>
+        </div>
+        <div class="col-md c2">
+          <h3 class="footer-text h3">Контактные телефоны</h3>
+          <div class="content-number">
+            <a class="text-p-black vel" href="tel:+375292922929"
+              >+375 29 292-29-29 (VEL)</a
+            >
+            <a class="text-p-black mtc" href="tel:+375333333333"
+              >+375 33 333-33-33 (МТС)</a
+            >
+          </div>
+        </div>
+        <div class="col-md c3">
+          <h3 class="footer-text h3">О нас</h3>
+          <p class="text-p-black">
+            Индивидуальное изготовление <br />
+            EVA ковриков для вашего автомобиля
+          </p>
+          <a
+            class="text-p-black loc"
+            href="https://www.google.com/maps/d/viewer?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ll=41.51313019191121%2C64.58526249999998&z=6"
+            >ваш город : <span id="userCity" class="your-loc"></span
+          ></a>
+        </div>
+        <img class="right-6sh img-foot" src="img/right-6sh.svg" alt="" />
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="dragula/dragula.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

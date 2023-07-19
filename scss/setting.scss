@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Upright", serif;
+  font-family: Roboto, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+$p30px: 30px;
+$m30px: 30px;
+$c-black: black;
+$c-white: white;
+$c-lighGl: #dcca87;
+$c-WhiGl: #5a564b;
+
+@mixin WiHi($wi, $hi) {
+  width: $wi;
+  height: $hi;
+}
+@mixin Flex($ds, $ai, $jc, $fd, $gp) {
+  display: $ds;
+  align-items: $ai;
+  justify-content: $jc;
+  flex-direction: $fd;
+  gap: $gp;
+}
+@mixin Grid($ds, $ai, $jc, $gtc, $gp) {
+  display: $ds;
+  align-items: $ai;
+  justify-content: $jc;
+  grid-template-columns: $gtc;
+  gap: $gp;
+}
+@mixin Text($fsz, $fst, $fw, $lh, $ta, $txt-cl) {
+  font-size: $fsz;
+  font-style: $fst;
+  font-weight: $fw;
+  line-height: $lh;
+  text-align: $ta;
+  color: $txt-cl;
+}
+@mixin Btn($btn-b, $btn-br, $btn-bg, $btn-tc, $btn-cur, $btn-pad) {
+  border: $btn-b;
+  border-radius: $btn-br;
+  background: $btn-bg;
+  color: $btn-tc;
+  cursor: $btn-cur;
+  padding: $btn-pad;
+}
+@mixin PadMarg($pad, $marg) {
+  padding: $pad;
+  margin: $marg;
+}
+@mixin PosT($pos, $tp, $lf, $z-i) {
+  position: $pos;
+  top: $tp;
+  left: $lf;
+  z-index: $z-i;
+}
+@mixin PosB($pos, $bt, $rg, $z-i) {
+  position: $pos;
+  bottom: $bt;
+  right: $rg;
+  z-index: $z-i;
+}
+@mixin Pos($pos, $bt, $rg, $tp, $lf, $z-i) {
+  position: $pos;
+  bottom: $bt;
+  right: $rg;
+  top: $tp;
+  left: $lf;
+  z-index: $z-i;
+}

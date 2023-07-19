@@ -1,0 +1,515 @@
+@import "setting";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  transition: all 2s;
+  width: 100%;
+  margin: 0px auto;
+  padding: 30px 125px;
+  max-width: 1600px;
+}
+.contbg {
+  background: linear-gradient(
+    224deg,
+    rgba(46, 49, 146, 0.7) 0%,
+    rgba(212, 20, 90, 0.7) 100%
+  );
+  transition: all 2s;
+}
+.conbg {
+  background: linear-gradient(
+    142deg,
+    rgba(212, 20, 90, 0.25) 0%,
+    rgba(46, 49, 146, 0.25) 100%
+  );
+  padding: 0px;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  overflow: hidden;
+  transition: all 2s;
+}
+.foot {
+  margin-bottom: 100px;
+  transition: all 2s;
+}
+.img-a {
+  text-decoration: none;
+}
+.text-a-white {
+  @include Text(15px, normal, 500, 9.5px, center, #ffffff);
+  text-decoration: none;
+}
+.text-a-black {
+  @include Text(36px, italic, 900, normal, center, $c-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.text-p-black {
+  @include Text(18px, normal, 400, normal, center, $c-black);
+}
+.h1 {
+  @include Text(50px, normal, 900, normal, center, $c-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.h3 {
+  @include Text(14px, normal, 700, normal, center, $c-black);
+  text-transform: uppercase;
+}
+.text-a-gray {
+  @include Text(18px, normal, 300, normal, center, #737373);
+  text-decoration: none;
+  transition: all 1s;
+  &:hover {
+    transition: all 1s;
+    opacity: 0.5;
+  }
+}
+.card-p-gray {
+  @include Text(14px, normal, 300, normal, start, #767676);
+  text-decoration: none;
+}
+.text-p-gray {
+  @include Text(24px, normal, 300, normal, center, #000000);
+  text-decoration: none;
+}
+.btn-pinkblue {
+  @include Btn(
+    0px,
+    7px,
+    linear-gradient(136deg, #b90160 0%, #2e3192 100%),
+    $c-white,
+    pointer,
+    16px
+  );
+  z-index: 3;
+  transition: all 2s;
+  animation: changeBgColor 1s;
+  @include Text(20px, normal, 900, normal, center, #ffffff);
+
+  &:hover {
+    animation: none;
+    background: linear-gradient(136deg, #b9016086 0%, #2e319277 100%);
+    opacity: 0.7;
+    color: #000000;
+  }
+  @keyframes changeBgColor {
+    0% {
+      background: linear-gradient(200deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    10% {
+      background: linear-gradient(140deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    20% {
+      background: linear-gradient(150deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    30% {
+      background: linear-gradient(160deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    40% {
+      background: linear-gradient(170deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    50% {
+      background: linear-gradient(180deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    60% {
+      background: linear-gradient(190deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    70% {
+      background: linear-gradient(1100deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    80% {
+      background: linear-gradient(120deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    90% {
+      background: linear-gradient(130deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+    100% {
+      background: linear-gradient(136deg, #b90160 0%, #2e3192 100%);
+      transition: all 2s;
+    }
+  }
+}
+.text-span-col {
+  @include Text(50px, normal, 400, normal, center, $c-black);
+  text-transform: uppercase;
+  color: #3d5bf5;
+  animation: gradientAnimation 10s infinite;
+
+  @keyframes gradientAnimation {
+    0% {
+      color: #b90160;
+    }
+    10% {
+      color: #3d5bf5;
+    }
+    20% {
+      color: #b90160;
+    }
+    30% {
+      color: #3d5bf5;
+    }
+    40% {
+      color: #b90160;
+    }
+    50% {
+      color: #3d5bf5;
+    }
+    60% {
+      color: #b90160;
+    }
+    70% {
+      color: #3d5bf5;
+    }
+    80% {
+      color: #b90160;
+    }
+    90% {
+      color: #3d5bf5;
+    }
+    100% {
+      color: #b90160;
+    }
+  }
+}
+.header {
+  @include Flex(flex, center, space-between, row, 0px);
+  .header-left {
+    @include Flex(flex, center, center, row, 0px);
+    .content-number {
+      @include Flex(flex, center, space-between, row, 12px);
+      .text-a-white {
+        @include Text(15px, normal, 500, 9.5px, center, #ffffff);
+        text-decoration: none;
+      }
+    }
+  }
+  .header-center {
+    @include Flex(flex, center, center, row, 12px);
+  }
+  .header-right {
+    @include Flex(flex, center, center, row, 12px);
+    .insta {
+      display: flex;
+      gap: 5px;
+    }
+  }
+}
+.main-header {
+  @include Flex(flex, center, space-between, row, 11px);
+  .main-logo {
+    @include Flex(flex, center, center, row, 11px);
+    text-decoration: none;
+  }
+  .main-item-a {
+    @include Flex(flex, center, center, row, 25px);
+  }
+}
+.main {
+  @include Flex(flex, center, space-between, row, 0px);
+  position: relative;
+  .main-left {
+    @include Flex(flex, start, center, column, 10px);
+    .main-btn {
+      @include Flex(flex, center, center, row, 0px);
+    }
+    .h1 {
+      @include Text(50px, normal, 900, normal, start, $c-black);
+      text-decoration: none;
+      text-transform: none;
+    }
+  }
+  .main-right {
+    @include Flex(flex, center, center, row, 0px);
+    .absolute {
+      position: absolute;
+      top: 0;
+      right: -20px;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+}
+.main-card-content {
+  @include Flex(flex, center, center, column, 90px);
+  .main-card-text {
+    @include Flex(flex, center, center, row, 10px);
+    @include Text(50px, normal, 400, normal, center, $c-black);
+  }
+  .main-cards {
+    @include Flex(grid, center, center, none, 60px);
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+
+    .main-card {
+      @include Flex(flex, center, center, column, 0px);
+      border-radius: 9px;
+      background: #fff;
+      box-shadow: #ff70ba59 0px 2px 30px 1px;
+      flex-shrink: 0;
+      max-width: 594px;
+      height: 100%;
+      cursor: pointer;
+
+      .card-img {
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        width: 100%;
+        height: 100%;
+      }
+      .card-texts {
+        @include Flex(flex, start, center, column, 20px);
+        padding: 23px;
+        padding-bottom: 33px;
+        .h1 {
+          @include Text(40px, normal, 900, normal, start, $c-black);
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+    }
+    .absolute {
+      position: absolute;
+      z-index: -1;
+      top: 40px;
+      left: -227px;
+    }
+  }
+}
+.main-comments {
+  @include Flex(flex, center, center, none, 70px);
+  position: relative;
+  padding: 70px;
+  padding-top: 80px;
+  transition: all 2s;
+  .main-comment {
+    @include Flex(flex, center, center, column, 20px);
+    width: 600px;
+    height: 100%;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.349) 0px 2px 30px 1px;
+    flex-shrink: 0;
+    position: relative;
+    padding: 65px 44px 30px 44px;
+    transition: all 2s;
+    opacity: 0.5;
+    cursor: pointer;
+
+    .comment-img {
+      position: absolute;
+      top: -80px;
+    }
+    .main-comment-hr {
+      width: 130px;
+      height: 3px;
+      background: linear-gradient(136deg, #e7097c 0%, #262bd3 100%);
+    }
+  }
+}
+.row {
+  @include Flex(grid, center, space-between, none, 20px);
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  max-width: 1440px;
+  .col-md {
+    cursor: grabbing;
+    text-decoration: none;
+    @include Flex(flex, start, center, column, 10px);
+    .h3 {
+      text-align: start;
+    }
+    .content-number {
+      @include Flex(flex, start, center, column, 10px);
+      .text-p-black {
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+    .text-p-black {
+      text-align: start;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+  .img-foot {
+    position: absolute;
+    z-index: -1;
+  }
+  .left-6sh {
+    left: -95px;
+    top: -130px;
+  }
+  .right-6sh {
+    right: 30px;
+    bottom: -15px;
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 32px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(199, 199, 199);
+  border-radius: 100px;
+}
+.comment-on {
+  @include Flex(flex, center, center, column, 20px);
+  width: 600px;
+  height: 100%;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.349) 0px 2px 30px 1px;
+  flex-shrink: 0;
+  position: relative;
+  padding: 65px 44px 30px 44px;
+  transition: all 2s;
+  opacity: 1;
+  cursor: pointer;
+
+  .comment-img {
+    position: absolute;
+    top: -80px;
+  }
+  .main-comment-hr {
+    width: 130px;
+    height: 3px;
+    background: linear-gradient(136deg, #e7097c 0%, #262bd3 100%);
+  }
+}
+.modal {
+  display: none; /* Скрыть модальное окно изначально */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  transition: all 2s;
+  .modal-content {
+    background-image: url(../img/modal-bg.svg);
+    .modal-container {
+      @include Flex(flex, center, center, column, 30px);
+      max-width: 750px;
+      height: 100%;
+    }
+    @include Flex(flex, center, center, column, 30px);
+    border-radius: 9px;
+    background-color: #fff;
+    box-shadow: #ff70ba59 0px 2px 30px 1px;
+    transition: all 2s;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px;
+    border: none;
+    width: 80%;
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      &:hover,
+      &:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .text-h1 {
+      @include Text(24px, normal, 600, normal, center, $c-black);
+      text-transform: uppercase;
+    }
+    .modal-content-inputs {
+      @include Flex(flex, center, space-between, row, 25px);
+      .input {
+        background-color: white;
+        color: #989898;
+        padding: 0.15rem 0.5rem;
+        min-height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #989898;
+        line-height: 1.15;
+        width: 360px;
+
+        &:focus {
+          border-bottom: 2px solid #b90160;
+          border-radius: 4px 4px 2px 2px;
+        }
+
+        &:hover {
+          outline: 1px solid rgb(255, 255, 255);
+        }
+      }
+    }
+    .modal-textarea {
+      background-color: white;
+      color: #989898;
+      padding: 0.15rem 0.5rem;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #989898;
+      line-height: 1.15;
+      width: 100%;
+      max-height: 81px;
+      max-width: 750px;
+      resize: none;
+      &:focus {
+        border-bottom: 2px solid #b90160;
+        border-radius: 4px 4px 2px 2px;
+      }
+
+      &:hover {
+        outline: 1px solid rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+//______________________________________
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:dximagetransform.microsoft.alpha(opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:dximagetransform.microsoft.alpha(opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+@import "_media.scss";

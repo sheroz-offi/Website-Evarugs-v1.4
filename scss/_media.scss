@@ -1,0 +1,346 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 1070px) {
+  .main {
+    .main-right {
+      .relative {
+        height: 82vh;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 30px 50px;
+  }
+  .header {
+    .header-left {
+      cursor: pointer;
+      .content-number {
+        display: none;
+      }
+    }
+    .header-right {
+      cursor: pointer;
+      .insta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: start;
+        gap: 5px;
+      }
+    }
+  }
+  .main-header {
+    .main-item-a {
+      display: none;
+    }
+  }
+  .main {
+    .main-left {
+      .main-text-h1 {
+        font-size: 40px;
+      }
+    }
+    .main-right {
+      .relative {
+        height: 55vh;
+      }
+      .absolute {
+        height: 100%;
+        right: 0px;
+        z-index: 1;
+      }
+    }
+  }
+  .main-card-content {
+    .main-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .main-card {
+        .card-img {
+          height: 260px;
+        }
+      }
+    }
+    .main-card-text {
+      font-size: 40px;
+    }
+  }
+  .main-comments {
+    @include Flex(flex, center, center, column, 70px);
+    left: 0;
+    .main-comment {
+      opacity: 1;
+    }
+  }
+  .modal {
+    .modal-content {
+      background-image: url(../img/Mask\ Group.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-image-width: 100%;
+      border-image-source: 100%;
+      .modal-content-inputs {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (max-width: 860px) {
+}
+@media (max-width: 770px) {
+  .container {
+    padding: 30px 50px;
+  }
+  .header {
+    .header-left {
+      cursor: pointer;
+      .content-number {
+        display: none;
+      }
+    }
+    .header-right {
+      cursor: pointer;
+      .insta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: start;
+        gap: 5px;
+      }
+    }
+  }
+  .main-header {
+    .main-item-a {
+      display: none;
+    }
+  }
+  .main {
+    .main-left {
+      .main-text-h1 {
+        font-size: 40px;
+      }
+    }
+    .main-right {
+      .relative {
+        height: 55vh;
+      }
+      .absolute {
+        height: 100%;
+        right: 0px;
+        z-index: 1;
+      }
+    }
+  }
+  .main-card-content {
+    .main-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .main-card {
+        .card-img {
+          height: 260px;
+        }
+      }
+    }
+    .main-card-text {
+      font-size: 40px;
+    }
+  }
+  .main-comments {
+    @include Flex(flex, center, center, column, 70px);
+    left: 0;
+    .main-comment {
+      opacity: 1;
+    }
+  }
+  .modal {
+    .modal-content {
+      background-image: url(../img/Mask\ Group.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-image-width: 100%;
+      border-image-source: 100%;
+      .modal-content-inputs {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (max-width: 690px) {
+  .header {
+    .header-center {
+      .loc {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
+  .main-header {
+    justify-content: center;
+    padding-bottom: 30px;
+    font-weight: 900;
+    .main-logo {
+      .text-a-black {
+        font-size: 30px;
+      }
+    }
+  }
+  .main {
+    height: 300px;
+    .main-left {
+      align-items: center;
+      .main-text-h1 {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    .main-right {
+      .relative {
+        display: none;
+      }
+      .absolute {
+        width: 300px;
+        height: 100%;
+      }
+    }
+  }
+  .main-card-content {
+    .main-card-text {
+      font-size: 30px;
+    }
+    .text-span-col {
+      font-size: 33px;
+    }
+  }
+  .main-comments {
+    .main-comment {
+      width: 440px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .main-header {
+    justify-content: center;
+    padding-bottom: 30px;
+    font-weight: 900;
+    .main-logo {
+      .text-a-black {
+        font-size: 20px;
+      }
+    }
+  }
+  .main {
+    height: 200px;
+    .main-left {
+      align-items: center;
+      .main-text-h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .main-card-content {
+    .main-card-text {
+      font-size: 20px;
+    }
+    .text-span-col {
+      font-size: 23px;
+    }
+    .main-cards {
+      .absolute {
+        display: none;
+      }
+    }
+  }
+  .main-comments {
+    .main-comment {
+      width: 330px;
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    .col-md {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .img-foot {
+      display: none;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .header {
+    justify-content: center;
+    .header-left {
+      display: flex;
+      .content-number {
+        display: flex;
+        flex-direction: column;
+
+        .img-number {
+          display: none;
+        }
+      }
+    }
+    .header-center {
+      display: none;
+    }
+    .header-right {
+      display: none;
+    }
+  }
+  .main-comments {
+    .main-comment {
+      width: 250px;
+    }
+  }
+  .modal {
+    .modal-content {
+      .modal-container {
+        max-width: 200px;
+        .modal-content-inputs {
+          .input {
+            width: 200px;
+            border-radius: 9px;
+          }
+        }
+        .modal-textarea {
+          border-radius: 9px;
+        }
+      }
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    .col-md {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      .text-p-black {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 280px) {
+}
